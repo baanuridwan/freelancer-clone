@@ -1,0 +1,980 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: black;
+    font-family: "Roboto", serif;
+}
+.material-symbols-outlined{
+    vertical-align: middle;
+}
+.left-nav{
+    display: flex;
+    align-items: center;
+}
+.toggle-button{
+    position: absolute;
+    top: 2.2rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 20px;
+    height: 11px;
+}
+.toggle-button .bar{
+    height: 1.5px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+
+}
+.right-nav{
+    display: flex;
+    align-items: center;
+}
+.nav-img{
+    padding-right: 1rem;
+}
+nav{
+    display: flex;
+    /* From https://css.glass */
+background: rgba(13, 13, 13, 0.28);
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(12.7px);
+-webkit-backdrop-filter: blur(12.7px);
+justify-content: space-between;
+align-items: center;
+padding: 1rem 3rem;
+text-wrap: wrap;
+position: sticky;
+top: 0;
+z-index: 10;
+}
+.left-nav-link{
+    text-decoration: none;
+    color: white;
+    padding: 0 .5rem;
+    display: block;
+    transition: all linear 300ms;
+}
+.left-nav-link:hover{
+    color: rgb(41,178,254);
+}
+.right-nav-link{
+    text-decoration: none;
+    display: block;
+    color: white;
+    padding: 0 1rem;
+    transition: all linear 300ms;
+}
+.right-nav-link:hover{
+    color: rgb(41,178,254);
+}
+.post-project{
+padding: .5rem .8rem;
+border: none;
+outline: none;
+background-color: rgb(231,2,121);
+color: white;
+font-weight: bold;
+border-radius: 2px;
+}
+.post-project:hover{
+    background-color: rgb(203, 0, 105);
+    cursor: pointer;
+}
+.background-clip{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    background-color: rgba(0, 0, 0, 0.4);
+
+}
+video{
+    width: 100%;
+    background-size: cover;
+    z-index: -1;
+}
+.first-container{
+    color: white;
+    margin-bottom: 3rem;
+}
+.first-container-text{
+    width: 45%;
+    margin: 0 3rem;
+}
+ h1{
+    font-size: 3.5rem;
+}
+.first-list {
+    padding: 2rem;
+    font-size: 1.2rem; 
+}
+.first-list ul{
+    line-height: 140%;   
+}
+.button1{
+    padding: 1rem 1.5rem;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: rgb(231,2,121);
+    border: none;
+    outline: none;
+    border-radius: 2px;
+    margin-right: .5rem;
+}
+.button1:hover{
+    background-color: rgb(203, 0, 105);
+    cursor: pointer;
+}
+.button2{
+    padding: 1rem 1.5rem;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 2px;
+}
+.button2:hover{
+background-color: rgba(0, 0, 0, 0.106);
+color: rgba(255, 255, 255, 0.82);
+cursor: pointer;
+}
+.second-container{
+    padding: 2rem;
+    color: white;
+    font-size: 1.2rem;
+    text-wrap: nowrap;
+    position: relative;
+}
+.company-list{
+
+    display: flex;
+    overflow: auto;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.2rem;
+    width: 100%;
+    padding: 2rem 1rem 0 1rem;
+
+}
+.company-list p{
+    margin-right: .5rem;
+    color: white;
+    font-size: 1.2rem;
+}
+.first-container-button{
+    display: flex;
+  
+    width: 500px;
+    margin-left: 2.5rem;
+}
+.company-list::-webkit-scrollbar{
+    display: none;
+}
+.company-logo{
+    padding-right: 1rem;
+}
+.facebook-adobe{
+    padding-right: 1rem;
+}
+.bird-1{
+    width: 100%;
+    z-index: -1;   
+}
+
+.card-1{
+    position: absolute;
+    width: 300px;
+    height: 150px;
+   right: 13rem;
+   top: 26rem;
+}
+.info-1{
+    display: flex;
+    background-image: url( "https://www.f-cdn.com/assets/main/en/assets/home/make-it-real/make-it-real-bg-ld.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.info-1-text{
+    
+    margin: 5rem 3rem 0 3rem;
+    text-wrap: wrap;
+    z-index: 1;
+}
+ .info-1-text h1{
+    font-size: 3.5rem;
+}
+.info-2{
+    display: flex;
+    background-image: url( "https://www.f-cdn.com/assets/main/en/assets/home/global-talent/global-talent-bg-ld.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.info-2-text{
+    color: white;
+    font-size: 20px;
+    margin: 5rem 3rem 0 3rem;
+    text-wrap: wrap;
+    z-index: 1;
+}
+
+ .info-2-text h1{
+    font-size: 3.5rem;
+}
+.pink{
+    color: rgb(231,2,121);
+}
+
+.first-grid{
+    width: 560px;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  margin-bottom: 3rem;
+    flex-wrap: wrap;
+
+}
+.first-grid-2{
+    width: 580px;
+    margin-top: 1.8rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  margin-bottom: 3rem;
+    flex-wrap: wrap;
+
+}
+.grid-item-1{
+    width: 280px;
+    padding: 1rem 1rem;
+    line-height: 140%;
+}
+.grid-item-2{
+    width: 290px;
+    padding: 1rem 1rem;
+    line-height: 140%;
+    
+}
+.grid-item-2 h2{
+    font-size: 2rem;
+    line-height: 140%;
+    padding-bottom: 1rem;
+}
+.grid-item-1 h2{
+    padding-bottom: .5rem;
+}
+.dreams h2{
+    margin-bottom: .5rem;
+}
+.get-started{
+    color: rgb(231,2,121);
+    text-decoration: none;
+    font-weight: bold;
+}
+.get-started:hover{
+    text-decoration: underline;
+}
+.third-container{
+display: grid;
+grid-template-columns: auto auto;
+gap: 0 10px;
+padding: 2rem;
+width: fit-content;
+height: fit-content;
+
+}
+
+.grid-image-1{
+  
+     text-align: center;
+     height: fit-content;
+     width: fit-content;
+     transition: all linear 200ms;
+    
+ }
+
+.grid-image-1:hover{
+    transform: scale(1.06);
+   
+   
+}
+.grid-image-1:hover .grid-text{
+display: flex;
+}
+.watch{
+    margin: auto;
+    border-radius: 5px;
+    max-width: 100%;
+    max-height: 100%;
+}
+.house{
+    margin: auto;
+    border-radius: 5px;
+    max-width: 100%;
+    max-height: 100%;
+}
+.scale-grid{
+    color: rgb(15, 15, 15);
+    text-decoration: none;
+}
+.grid-text{
+    background-color: white;
+    width: 100%;
+    position: absolute;
+    padding: .5rem 0.5rem;
+    justify-content: space-between;
+    display: none;
+    align-items: center;
+}
+.grid-button{
+    background-color: rgb(231,2,121);
+    outline: none;
+    border: none;
+    border-radius: 2px;
+    padding: .5rem .8rem;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+}
+.grid-button:hover{
+    background-color: rgb(203, 0, 105);
+}
+.grid-image-2{
+    display: grid;
+    height: fit-content;
+    width: fit-content;
+    grid-template-columns:  minmax(auto, 290px) minmax(auto, 290px) ;
+    gap: 10px;   
+}
+
+.gallery:hover{
+    transform: scale(1.06); 
+  
+}
+.gallery{
+    transition: all linear 200ms;
+}
+.grid-text2{
+    background-color: white;
+    width: inherit;
+    font-size: 12px;
+    position: absolute;
+    padding: .5rem 0.5rem;
+    justify-content: space-between;
+    display: none;
+    margin-top: -.3rem;
+    border-radius: 0 0 4px 4px;
+}
+.gallery:hover .grid-text2{
+display: flex;
+flex-direction: column;
+
+}
+.grid-button2{
+    background-color: rgb(231,2,121);
+    outline: none;
+    border: none;
+    flex-wrap: nowrap;
+    border-radius: 2px;
+    margin-top: .5rem;
+    padding: .5rem .8rem;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+}
+.grid-button2:hover{
+    background-color: rgb(203, 0, 105);
+}
+
+.stars{
+  max-width: 100%;
+  max-height: 100%;
+  z-index: -1;
+  position: relative;
+}
+.rating{
+max-width: 100%;
+max-height: 100%;
+object-fit: cover;
+z-index: -1;
+left: 50rem;
+top: 140rem;
+position: absolute;
+
+}
+.fourth-container{
+    margin-bottom: 8rem;
+}
+.company-list-2{
+    color: white;
+   padding-left: 3rem;
+   padding-right: 3rem;
+    display: flex;
+    overflow: auto;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.2rem;
+    width: 100%;  
+}
+
+.company-logo2{
+  padding: 1rem;
+  width: 11rem;
+ 
+}
+.all-company{
+display: flex;
+align-items: center;
+
+}
+.company-logo-1{
+    padding: .5rem;
+}
+
+/* .gr-1{
+    
+    height: 350px;
+    background-color: green;
+}
+.gr-2{
+  
+    height: 100px;
+    background-color: blanchedalmond;
+    
+}
+.gr-3{
+
+    height: 100px;
+    background-color: pink;
+}
+.gr-4{
+   
+    height: 100px;
+    background-color: purple;
+} */
+/* MEdia Queries */
+
+/* @media (max-aspect-ratio:16/9 ){
+    .background-clip{
+        width: 100%;
+        height: auto;
+    }
+}
+@media (max-aspect-ratio: 16/9){
+    .background-clip{
+        width: auto;
+        height: 100%;
+    }
+} */
+
+@media(max-width: 1189px){
+    
+    .first-container-text{
+        width: 50%;
+        margin: 2rem 0.5rem 0;
+   
+    }
+    h1{
+        font-size: 2.5rem;
+    }
+    .first-container-button{
+        display: flex;
+        width: 500px;
+        margin-left: .5rem;
+    }
+    .company-list{
+    display: flex;
+    overflow: auto;
+    background-color: black;
+    margin-top: 7rem;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.2rem;
+    width: 100%;
+    padding: 1rem;
+
+}
+.company-list p{
+    font-size: 1.2rem;
+}
+.company-logo{
+    width: 4rem;
+}
+.facebook-adobe{
+    width: 5rem;
+}
+.info-1{
+    display: flex;
+    background-image: url( "https://www.f-cdn.com/assets/main/en/assets/home/make-it-real/make-it-real-bg-ld.jpg");
+    background-repeat: no-repeat;
+    background-position:top;
+    background-color: black;
+    background-size:80%;
+
+}
+.info-1-text{
+     margin: 5rem 3rem 0 2rem;
+    text-wrap: wrap;
+    z-index: 1;
+}
+.card-1{
+    position: absolute;
+    display: none;
+    width: 250px;
+    height: 150px;
+   right: 13rem;
+   top: 18rem;
+}
+.first-grid{
+    width: 100%;
+    margin: 2rem 0 2rem -.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+
+}
+
+.grid-item-1{
+    width: 50%;
+    line-height: 150%;
+    
+}
+
+.grid-item-1 h2{
+    padding-bottom: .5rem;
+}
+.dreams h2{
+    margin-bottom: .5rem;
+    margin-left: .5rem;
+   
+}
+.get-started{
+    color: rgb(231,2,121);
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: .5rem;
+}
+}
+
+
+
+@media(max-width:960px){
+    .grid-image-1:hover{
+        transform: none;
+    }
+    .grid-image-1:hover .grid-text{
+    display: none;
+    }
+    .gallery:hover{
+        transform: none; 
+      
+    }
+    .gallery:hover .grid-text2{
+        display: none;        
+        }
+    .toggle-button{
+        display: flex;
+    }
+    .hire{
+        display: none;
+    }
+
+    .nav-img{
+        padding-right: 0;
+        margin-top: .5rem;
+    }
+  
+    .right-nav-button{
+        display: none;
+    }
+    .company-list{
+        display: flex;
+        overflow: auto;
+        background-color: black;
+        margin-top: 7rem;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding: 1rem;
+    
+    }
+    .company-list p{
+        font-size: 0.8rem;
+    }
+    .company-logo{
+        width: 3.5rem;
+    }
+    .facebook-adobe{
+        width: 4rem;
+    }
+    .info-1-text{
+    
+        margin: 5rem 1rem 0 1rem;
+        text-wrap: wrap;
+        z-index: 1;
+    }
+    .info-1-text h1{
+         font-size: 2.5rem;
+        }
+
+    .first-grid{
+        width: 100%;
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      margin-bottom: 2rem;
+    }
+    
+    .grid-item-1{
+        width: 50%;
+        line-height: 140%;
+        font-size: 14px;
+        
+    }
+    
+    .grid-item-1 h2{
+        padding-bottom: .5rem;
+       
+    }
+    .dreams h2{
+        margin-bottom: .5rem;
+        margin-left: 1rem;
+        font-size: 1.2rem;
+        
+       
+    }
+    .get-started{
+        color: rgb(231,2,121);
+        text-decoration: none;
+        font-weight: bold;
+        margin-left: 1rem;
+    }
+
+    .info-2-text{
+    
+        margin: 5rem 1rem 0 1rem;
+        text-wrap: wrap;
+        z-index: 1;
+    }
+    .info-2-text h1{
+         font-size: 2.5rem;
+        }
+    .first-grid-2{
+        width: 100%;
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      margin-bottom: 2rem;
+    }
+    
+    .grid-item-2{
+        width: 50%;
+        line-height: 140%;
+        font-size: 14px;
+        
+    }
+    
+    .grid-item-2 h2{
+        padding-bottom: .5rem;
+       
+    }
+    .dreams h2{
+        margin-bottom: .5rem;
+        margin-left: 1rem;
+        font-size: 1.2rem;
+        
+       
+    }
+    .get-started{
+        color: rgb(231,2,121);
+        text-decoration: none;
+        font-weight: bold;
+        margin-left: 1rem;
+    }
+}
+
+
+@media(max-width: 956px){
+    .first-container-text{
+        width: 55%;
+        margin-left: .5rem;
+   
+    }
+    h1{
+        font-size: 3rem;
+    }
+    .first-list {
+        padding: 2rem;
+        font-size: 1.2rem; 
+    }
+    .first-list ul{
+        line-height: 140%;   
+    }
+    .first-container-button{
+        margin-left: .5rem;
+    }
+}
+
+@media(max-width: 747px){
+    .third-container{
+        display: grid;
+        grid-template-columns: auto ;
+        padding: 0;
+    }
+    .grid-image-2{
+        grid-template-columns: auto auto auto auto;
+    }
+    }
+
+@media(max-width: 767px){
+   
+    .first-container-text{
+        margin-top: 2rem ;
+        width: 90%;
+        margin-left: 1rem;
+        margin-bottom: 4rem;
+    }
+    video{
+        display: none;
+    }
+   
+    h1{
+        font-size: 2.5rem;
+    }
+    .first-container-button{
+        width: 90%;
+        height: 120px;
+        margin: auto;
+        justify-content: space-between;
+        text-align: center;
+        flex-direction: column;
+    }
+   
+   
+    .button1{
+        width: 100%;
+       
+    }
+    .button2{
+        width: 100%;
+       
+    }
+    .first-list {
+        padding: 2rem;
+        font-size: 1.2rem; 
+    }
+    .first-list ul{
+        line-height: 140%;   
+    }
+       .company-list{
+        display: flex;
+        overflow:auto;
+        background-color: black;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding: 0 1rem 0;
+       
+    
+    }
+    .company-list p{
+        font-size: 0.8rem;
+
+    display: none;
+    }
+    .company-logo{
+        width: 7rem;
+        
+        padding: 0 1rem 0;
+
+    }
+    .facebook-adobe{
+        width: 7rem;
+        padding: 0 1rem 0;
+
+    }
+    .info-1{
+        display: flex;
+        background-image: url( "https://www.f-cdn.com/assets/main/en/assets/home/make-it-real/make-it-real-bg-ld.jpg");
+        background-repeat: no-repeat;
+        background-position:bottom;
+        background-color: black;
+        background-size:0;
+    
+    }
+    .info-1-text{
+        margin: 5rem 1rem 0 0;
+        text-wrap: wrap;
+        z-index: 1;
+    }
+    .first-grid{
+        width: 100%;
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      margin-bottom: 2rem;
+    }
+    
+    .grid-item-1{
+        width: 100%;
+        line-height: 140%;
+        font-size: 14px;
+        
+    }
+    
+    .grid-item-1 h2{
+        padding-bottom: .5rem;
+       
+    }
+    .dreams h2{
+        margin-bottom: .5rem;
+        margin-left: 1rem;
+        font-size: 1.2rem;
+        
+       
+    }
+    .get-started{
+        color: rgb(231,2,121);
+        text-decoration: none;
+        font-weight: bold;
+        margin-left: 1rem;
+    }
+    .info-2-text{
+        margin: 5rem 1rem 0 0;
+        text-wrap: wrap;
+        z-index: 1;
+    }
+    .first-grid-2{
+        width: 100%;
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      margin-bottom: 2rem;
+    }
+    
+    .grid-item-2{
+        width: 100%;
+        line-height: 140%;
+        font-size: 14px;
+        
+    }
+    
+    .grid-item-2 h2{
+        padding-bottom: .5rem;
+       
+    }
+    .dreams h2{
+        margin-bottom: .5rem;
+        margin-left: 1rem;
+        font-size: 1.2rem;
+        
+       
+    }
+    .get-started{
+        color: rgb(231,2,121);
+        text-decoration: none;
+        font-weight: bold;
+        margin-left: 1rem;
+    }
+}
+
+/* 414px */
+@media(max-width: 428px){
+   
+    .first-container-text{
+        margin-top: 2rem ;
+        width: 90%;
+        margin-left: 1rem;
+        margin-bottom: 4rem;
+    }
+    .nav-img{
+        padding-top: .5rem;
+        width: 80px;
+        margin-left: -50%;
+    }
+    .right-nav-link{
+        padding-top: 1rem;
+    }
+    .toggle-button{
+        margin-top: .5rem;
+    }
+    .nav-logo{
+      
+       height: 30px;
+
+    }
+    video{
+        display: none;
+    }
+   
+    h1{
+        font-size: 2.5rem;
+    }
+    .first-container-button{
+        width: 90%;
+        height: 120px;
+        margin: auto;
+        justify-content: space-between;
+        text-align: center;
+        flex-direction: column;
+    }
+   
+   
+    .button1{
+        width: 100%;
+       
+    }
+    .button2{
+        width: 100%;
+       
+    }
+    .first-list {
+        padding: 2rem;
+        font-size: 1.2rem; 
+    }
+    .first-list ul{
+        line-height: 140%;
+        
+    }
+    .first-list li{
+        font-size: 1rem;
+    }
+}
+
+
+
+/* .background-clip2{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    background-color: rgba(0, 0, 0, 0.4);
+
+}
+@media (min-aspect-ratio: 16/9){
+    .background-clip2{
+        width: 100%;
+        height: auto;
+    }
+}
+@media (min-aspect-ratio: 16/9){
+    .background-clip2{
+        width: auto;
+        height: 100%;
+    }
+}

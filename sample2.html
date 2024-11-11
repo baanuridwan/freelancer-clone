@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  
+</head>
+<body>
+    <!-- <input type="text" id="love"> -->
+    <h1 id="heading"></h1>
+    <h2 id="head2"></h2>
+    <button id="btn" onclick="externalFunction()">Click</button>
+</body>
+</html>
+<script>
+   
+  let str = "I hate Javascript with passion, I sincerely hate it with passion again"
+    document.getElementById('heading').innerHTML =  str
+
+
+   function externalFunction(){
+
+   document.getElementById("heading").innerHTML = str.replaceAll("hate", "love")
+    }
+
+
+
+// string methods
+ </script>
